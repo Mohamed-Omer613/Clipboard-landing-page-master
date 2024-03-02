@@ -1,0 +1,173 @@
+/* **********
+Imports
+********** */
+@font-face {
+    font-family: Bai Jamjuree;
+    src: url(./fonts/BaiJamjuree-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Bai Jamjuree;
+    src: url(./fonts/BaiJamjuree-SemiBold.ttf);
+    font-weight: 600;
+}
+/* **********
+Reset
+********** */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* **********
+Global
+********** */
+:root{
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+body{
+    text-align: center;
+    font-size: 18px;
+    font-family: Bai Jamjuree;
+}
+
+section{
+    /* margin: 3em auto; */
+}
+h1{
+    font-size: 1.7em;
+    font-family: Bai Jamjuree;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-size: .8em;
+    line-height: 1.6;
+    margin: 1.2em 0 3em;
+}
+div{
+    margin: 1em 0 1.3em;
+}
+a{
+    color: white;
+    display: block;
+    background-color: var(--Strong-Cyan);
+    padding: 1em;
+    margin-bottom: 1.3em;
+    border-radius: 3em;
+}
+/* **********
+Page Content
+********** */
+.header{
+    background-image: url(./images/bg-header-mobile.png);
+    padding: 5em 0 1.5em;
+}
+.content{
+    padding: 0em 1.3em .3em;
+} 
+.history p{
+    text-indent: 2.2em;
+}
+.history a:nth-child(4){
+    background-color: var(--Light-Blue);
+    margin-bottom: 10em;
+}
+.text{
+    margin: 3em 0 10em;
+}
+.access img{
+    margin: 0 0 6em;
+}
+.box{
+margin: 0 0 6em;
+}
+.box div{
+    margin-bottom: 2em;
+}
+.box img{
+    margin-bottom: 2em;
+}
+.logo{
+    margin-bottom: 6em;
+}
+.logo img{
+    margin-bottom: 2em;
+}
+.clip a:nth-child(4){
+    background-color: var(--Light-Blue);
+    margin-bottom: 6em;
+}
+.footer{
+    background-color: rgb(242, 247, 247);
+}
+.footer img{
+    margin: 4em 0 2em;
+}
+.social img{
+    margin: 0 1em 2em;
+}
+/* **********
+Media
+********** */
+@media screen and (min-width: 1279px) {
+    .header{
+        background-image: url(./images/bg-header-desktop.png);
+        padding: 5em 0 1.5em;
+    }
+    a{
+        color: white;
+        display: inline-block;
+        background-color: var(--Strong-Cyan);
+        padding: 1em;
+        margin-bottom: 1.3em;
+        border-radius: 3em;
+    }
+    .content{
+        padding: 0em 20em .3em;
+    } 
+    .media-1{
+        display: flex;
+    }
+    .image{
+        margin-left: -15em;
+    }
+    .text{
+        margin: 1em 0 0 5em;
+    }
+    .meadia-2{
+        display: flex;
+    }
+    .logo{
+        display: flex;
+    }
+    .footer{
+        display: flex;
+        padding-left: 5em;
+        justify-content: space-between;
+    }
+    .foot-4{
+        display: flex;
+        justify-content: center;
+    }
+    .foot-1, .foot-2, .foot-3{
+        margin: 4em 0 0 4em;
+    }
+    .social{
+        margin: 5em 2em 0 0;
+    }
+    .logo div:nth-child(1), .logo div:nth-child(2), .logo div:nth-child(3), .logo div:nth-child(4){
+        margin: 1em;
+}
+.meadia-2 div:nth-child(1), .meadia-2 div:nth-child(1), .meadia-2 div:nth-child(1),{
+    margin: 1em;
+}
+}
